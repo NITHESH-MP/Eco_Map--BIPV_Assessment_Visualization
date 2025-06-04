@@ -1,0 +1,47 @@
+/* src/components/styles/Header.css */
+
+/* Basic header styles */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .header.scrolled {
+    background-color: rgba(5, 0, 0, 0.9); /* Solid dark background on scroll */
+    color: white;
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 40px;
+    font-weight: bold;
+    color: white; /* Initial logo color */
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Navigation links */
+  .nav-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white; /* Initial link color */
+    font-size: 20px;
+    padding-right: 25px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #00d1b2; /* Cool accent color on hover */
+  }
+  
